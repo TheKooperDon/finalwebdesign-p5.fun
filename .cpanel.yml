@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jsvjr/public_html/
+    - /bin/cp -R /home/jsvjr/repositories/finalwebdesign-p5.fun/ $DEPLOYPATH
