@@ -48,11 +48,12 @@ button{
 
 
 .card{
+	position: relative;
 	background-color: black;
   border-radius: 20px;
   color: white;
   padding: 10px;
-  position: relative;
+  
   padding-bottom: 80px;	
   margin: 20px;
   width:100%;
@@ -69,6 +70,10 @@ button{
 	color: white;
 	
 }
+
+#card1{
+	margin-left: 100px;
+}
 .right-button{
 	background-color: yellow;
   color: black;
@@ -76,7 +81,7 @@ button{
   font-size: 1.2em;
   padding: 10px 20px;
   border-radius: 25px;
-  position: absolute; /* Add this property */
+  position: absolute; 
   bottom: 10px; /* Adjust this value to position the button */
   right: 10px; /* Adjust this value to position the button */
 }
@@ -89,15 +94,7 @@ button{
   }
 
 
-  .card:nth-child(1),
-  .card:nth-child(3) {
-	margin-right: 100px;
-  }
-  
-  /* Offset the second card to the left */
-  .card:nth-child(2) {
-	margin-left: 100px;
-  }
+
 
 
 
