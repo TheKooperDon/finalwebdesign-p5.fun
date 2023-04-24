@@ -55,7 +55,7 @@ button{
   position: relative;
   padding-bottom: 80px;	
   margin: 20px;
-  width:500px
+  width:100%;
 }
 
 
@@ -91,12 +91,12 @@ button{
 
   .card:nth-child(1),
   .card:nth-child(3) {
-	margin: 0 auto;
+	margin-right: 100px;
   }
   
   /* Offset the second card to the left */
   .card:nth-child(2) {
-	margin-left: 50px;
+	margin-left: 100px;
   }
 
 
