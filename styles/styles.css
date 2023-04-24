@@ -84,14 +84,14 @@ button{
 */
 .right-button{
 	background-color: yellow;
-  color: black;
-  font-family: Chivo, sans-serif;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  border-radius: 25px;
-  position: absolute; 
-  bottom: 10px; /* Adjust this value to position the button */
-  right: 10px; /* Adjust this value to position the button */
+  	color: black;
+ 	 font-family: Chivo, sans-serif;
+  	font-size: 1.2em;
+ 	 padding: 10px 20px;
+  	border-radius: 25px;
+ 	 position: absolute; 
+ 	 bottom: 10px; /* Adjust this value to position the button */
+ 	 right: 10px; /* Adjust this value to position the button */
 }
 
 .right-button:hover {
