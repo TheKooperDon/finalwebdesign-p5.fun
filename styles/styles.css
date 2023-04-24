@@ -80,12 +80,13 @@ button {
 
 */
 .right-button {
-	background-color: yellow;
-	color: black;
+	background-color: black;
+	color: yellow;
 	font-family: Chivo, sans-serif;
 	font-size: 1.2em;
 	padding: 10px 20px;
 	border-radius: 25px;
+	border: 2px solid yellow;
 	position: absolute;
 	bottom: 10px;
 	/* Adjust this value to position the button */
@@ -94,9 +95,9 @@ button {
 }
 
 .right-button:hover {
-	background-color: black;
+	background-color: yellow;
 	font-family: Chivo, sans-serif;
-	color: yellow;
+	color: black;
 	border: 2px solid yellow;
 }
 
