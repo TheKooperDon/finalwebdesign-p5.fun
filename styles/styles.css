@@ -2,6 +2,15 @@
 html {
 	font-size: 1em;
 }
+.site-id{
+	font-family: futura-pt, sans-serif ;
+	font-weight: 200;
+	font-style: normal;
+}
+
+p{
+	font-family: chivo, sans-serif;
+}
 
 
 
@@ -27,8 +36,51 @@ html {
 
 
 /*LINKS AND NAV*/
+#banner .site-id{
+	display:inline-block;
+	text-align: center;
+}
+#menu{
+	padding-top: 30px;
+	
+	
+}
+
+#menu ul{
 
 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+	
+}
+
+#menu li {
+	display: inline-block;
+	margin: 0 10px;
+	text-decoration: none;
+	
+	
+  }
+
+#menu a {
+	text-decoration: none;
+	color: #7bbc1a;
+	margin: 10px;
+	
+
+}
+#menu a:hover,
+#menu .current a {
+	color:black;
+	
+}
+
+#menu a:active{
+	color: blue;
+}
 
 
 
@@ -36,6 +88,26 @@ html {
 
 /*FOOTER*/
 
+#colophon ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+}
+
+#colophon li{
+	margin: 0 10px;
+	padding: 0;
+	display: inline-block;
+	
+}
+.social{
+	margin-bottom: 30px;
+}
+.social li{
+	margin: 0 10px;
+}
 /*END OF FOOTER*/
 
 
