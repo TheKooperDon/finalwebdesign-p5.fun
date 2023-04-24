@@ -1,4 +1,5 @@
 /*GLOBAL STYLES*/
+
 html {
 	font-size: 1em;
 }
@@ -67,18 +68,18 @@ button {
 
 }
 
-/*
-#card1{
-	margin-left: 100px;
-}
-#card2{
-	margin-left: 100px;
-}
+#card1,
+#card2,
 #card3{
-	margin-left: 100px;
+	width: 600px;
 }
 
-*/
+#card1,
+#card3{
+	margin-left: 200px;
+}
+
+
 .right-button {
 	background-color: black;
 	color: yellow;
