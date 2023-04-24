@@ -104,7 +104,12 @@ button {
 
 
 /*p5.js*/
-
+#p5-canvas-example{
+	margin: 0 0 0 175px;
+	padding: 0;
+	display: inline-block;
+	border: 2px solid white;
+}
 
 
 
