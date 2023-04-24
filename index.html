@@ -12,6 +12,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
 
 </head>
 
@@ -58,7 +61,20 @@
           <p>Here are a couple of examples of p5.js that showcase its ability to create interactive and engaging
             visuals.
           </p>
+          <div id="p5-canvas">
+          <script>
+            function setup() {
+              var canvas = createCanvas(400, 400);
+              canvas.parent('p5-canvas');
+            }
+            function draw() {
+              background(220);
+              ellipse(mouseX, mouseY, 50, 50);
+            }
+          </script>
+          </div>
           <button type="button" class="right-button">See More</button>
+      
         </section>
 
         <section class="card" id="card3">
