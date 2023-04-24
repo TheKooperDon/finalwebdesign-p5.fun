@@ -30,6 +30,23 @@ main {
 	background-color: #f5f5f5;
 }
 
+button{
+	background-color: yellow;
+	font-family: Chivo, sans-serif;
+	font-size: 1em;
+	padding: 10px 20px;
+	color: black;
+	border-radius: 25px;
+	
+}
+
+.card{
+	background-color: black;
+	border-radius: 20px;
+	color: white;
+	
+}
+
 
 
 /*SPECIAL LAYOUTS*/
@@ -139,10 +156,17 @@ main {
 
 /*FONTS AND TYPEOGRAPHY*/
 
+.card-header{
+	padding-top: 20px;
+	margin-left: 20px;
+	font-family: futura-pt, sans-serif;
+	font-weight: 300px;
+}
+
 li{
 	font-family: Chivo, sans-serif;
 	font-weight: 200;
-	color: black
+	color: black;
 }
 
 
