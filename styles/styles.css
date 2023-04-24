@@ -31,32 +31,73 @@ main {
 }
 
 button{
+	
+	
 	background-color: yellow;
-	font-family: Chivo, sans-serif;
-	font-size: 1em;
-	padding: 10px 20px;
-	color: black;
 	border-radius: 25px;
+	color: black;
+	font-family: Chivo, sans-serif;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	position: relative;
+	
+	
+	
 	
 }
 
+
 .card{
 	background-color: black;
-	border-radius: 20px;
-	color: white;
-	
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  padding-bottom: 80px;	
+  margin: 20px;
+  width:500px
 }
 
 
 
 /*SPECIAL LAYOUTS*/
 
+.card p{
+	background-color: black;
+	margin-left: 20px;
+	border-radius: 20px;
+	color: white;
+	
+}
+.right-button{
+	background-color: yellow;
+  color: black;
+  font-family: Chivo, sans-serif;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: absolute; /* Add this property */
+  bottom: 10px; /* Adjust this value to position the button */
+  right: 10px; /* Adjust this value to position the button */
+}
+
+.right-button:hover {
+	background-color: black;
+	font-family: Chivo, sans-serif;
+	color: yellow;
+	border: 2px solid yellow;
+  }
 
 
-
-
-
-
+  .card:nth-child(1),
+  .card:nth-child(3) {
+	margin: 0 auto;
+  }
+  
+  /* Offset the second card to the left */
+  .card:nth-child(2) {
+	margin-left: 50px;
+  }
 
 
 
