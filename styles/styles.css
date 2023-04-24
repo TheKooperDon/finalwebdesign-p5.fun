@@ -3,13 +3,16 @@ html {
 	font-size: 1em;
 }
 .site-id{
+
 	font-family: futura-pt, sans-serif ;
 	font-weight: 200;
 	font-style: normal;
+	
 }
 
 p{
-	font-family: chivo, sans-serif;
+	font-family: Chivo, sans-serif;
+	
 }
 
 
@@ -19,7 +22,13 @@ p{
 
 /*LAYOUT*/
 
-
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+main {
+	background-color: #f5f5f5;
+}
 
 
 
@@ -27,22 +36,33 @@ p{
 
 
 
-/*contact us form*/
 
 
-/* end contact form end*/
+
+
 
 
 
 
 /*LINKS AND NAV*/
+
 #banner .site-id{
-	display:inline-block;
-	text-align: center;
-}
-#menu{
-	padding-top: 30px;
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 0;
+	float:left;
+	font-family: futura-pt, sans-serif ;
+	font-weight: 200;
+	color: yellow;
 	
+}
+
+
+#menu{
+	
+	padding: 20px 0;
+	background-color: black;
+	border-radius: 25px;
 	
 }
 
@@ -54,27 +74,32 @@ p{
 	padding: 0;
 	text-align: center;
 	
+
+	
 	
 }
 
 #menu li {
 	display: inline-block;
 	margin: 0 10px;
+	padding: 0;
 	text-decoration: none;
+	
 	
 	
   }
 
 #menu a {
 	text-decoration: none;
-	color: #7bbc1a;
+	color: white;
 	margin: 10px;
+	padding: 0;
 	
 
 }
 #menu a:hover,
 #menu .current a {
-	color:black;
+	color:yellow;
 	
 }
 
@@ -114,7 +139,11 @@ p{
 
 /*FONTS AND TYPEOGRAPHY*/
 
-
+li{
+	font-family: Chivo, sans-serif;
+	font-weight: 200;
+	color: black
+}
 
 
 
