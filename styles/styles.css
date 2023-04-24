@@ -2,17 +2,18 @@
 html {
 	font-size: 1em;
 }
-.site-id{
 
-	font-family: futura-pt, sans-serif ;
+.site-id {
+
+	font-family: futura-pt, sans-serif;
 	font-weight: 200;
 	font-style: normal;
-	
+
 }
 
-p{
+p {
 	font-family: Chivo, sans-serif;
-	
+
 }
 
 
@@ -26,13 +27,14 @@ p{
 	width: 800px;
 	margin: 0 auto;
 }
+
 main {
 	background-color: #f5f5f5;
 }
 
-button{
-	
-	
+button {
+
+
 	background-color: yellow;
 	border-radius: 25px;
 	color: black;
@@ -40,36 +42,31 @@ button{
 	font-size: 1.2em;
 	padding: 10px 20px;
 	position: relative;
-	
-	
-	
-	
+
 }
 
 
-.card{
+.card {
 	position: relative;
 	background-color: black;
-  border-radius: 20px;
-  color: white;
-  padding: 10px;
-  
-  padding-bottom: 80px;	
-  margin: 20px;
-  width:100%;
+	border-radius: 20px;
+	color: white;
+	padding-bottom: 80px;
+	width: 100%;
 }
 
 
 
 /*SPECIAL LAYOUTS*/
 
-.card p{
+.card p {
 	background-color: black;
 	margin-left: 20px;
 	border-radius: 20px;
 	color: white;
-	
+
 }
+
 /*
 #card1{
 	margin-left: 100px;
@@ -82,16 +79,18 @@ button{
 }
 
 */
-.right-button{
+.right-button {
 	background-color: yellow;
-  	color: black;
- 	 font-family: Chivo, sans-serif;
-  	font-size: 1.2em;
- 	 padding: 10px 20px;
-  	border-radius: 25px;
- 	 position: absolute; 
- 	 bottom: 10px; /* Adjust this value to position the button */
- 	 right: 10px; /* Adjust this value to position the button */
+	color: black;
+	font-family: Chivo, sans-serif;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 25px;
+	position: absolute;
+	bottom: 10px;
+	/* Adjust this value to position the button */
+	right: 10px;
+	/* Adjust this value to position the button */
 }
 
 .right-button:hover {
@@ -99,7 +98,7 @@ button{
 	font-family: Chivo, sans-serif;
 	color: yellow;
 	border: 2px solid yellow;
-  }
+}
 
 
 
@@ -109,37 +108,37 @@ button{
 
 /*LINKS AND NAV*/
 
-#banner .site-id{
+#banner .site-id {
 	margin-top: 10px;
 	margin-left: 50px;
 	padding: 0;
-	float:left;
-	font-family: futura-pt, sans-serif ;
+	float: left;
+	font-family: futura-pt, sans-serif;
 	font-weight: 200;
 	color: yellow;
-	
+
 }
 
 
-#menu{
-	
+#menu {
+
 	padding: 20px 0;
 	background-color: black;
 	border-radius: 25px;
-	
+
 }
 
-#menu ul{
+#menu ul {
 
 
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	
 
-	
-	
+
+
+
 }
 
 #menu li {
@@ -147,26 +146,27 @@ button{
 	margin: 0 10px;
 	padding: 0;
 	text-decoration: none;
-	
-	
-	
-  }
+
+
+
+}
 
 #menu a {
 	text-decoration: none;
 	color: white;
 	margin: 10px;
 	padding: 0;
-	
+
 
 }
+
 #menu a:hover,
 #menu .current a {
-	color:yellow;
-	
+	color: yellow;
+
 }
 
-#menu a:active{
+#menu a:active {
 	color: blue;
 }
 
@@ -176,7 +176,7 @@ button{
 
 /*FOOTER*/
 
-#colophon ul{
+#colophon ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -184,32 +184,35 @@ button{
 
 }
 
-#colophon li{
+#colophon li {
 	margin: 0 10px;
 	padding: 0;
 	display: inline-block;
-	
+
 }
-.social{
+
+.social {
 	margin-bottom: 30px;
 }
-.social li{
+
+.social li {
 	margin: 0 10px;
 }
+
 /*END OF FOOTER*/
 
 
 
 /*FONTS AND TYPEOGRAPHY*/
 
-.card-header{
+.card-header {
 	padding-top: 20px;
 	margin-left: 20px;
 	font-family: futura-pt, sans-serif;
 	font-weight: 300px;
 }
 
-li{
+li {
 	font-family: Chivo, sans-serif;
 	font-weight: 200;
 	color: black;
@@ -222,17 +225,3 @@ li{
 /*IMAGES*/
 
 /*UTILITES*/
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
