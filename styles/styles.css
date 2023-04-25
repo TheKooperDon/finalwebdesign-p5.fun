@@ -115,6 +115,17 @@ button {
 	border: 2px solid white;
 }
 
+#p5{
+	margin: 0 0 0 175px;
+	padding: 0;
+	display: inline-block;
+	border: 2px solid white;
+}
+
+canvas {
+	display: block;
+  }
+
 
 
 /*LINKS AND NAV*/
