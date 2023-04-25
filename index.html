@@ -75,8 +75,18 @@
       <p>Here are a couple of examples of p5.js that showcase its ability to create interactive and engaging
         visuals.
       </p>
-      <div id="p5">
-        <script src="sketch2.js"></script>
+      <div id="p5-canvas-example">
+        <script>
+          function setup() {
+  var canvas = createCanvas(400, 200);
+  canvas.parent('p5-canvas-example');
+}
+function draw() {
+
+  ellipse(mouseX, mouseY, 50, 50);
+  fill(random(255), random(255), random(255))
+}
+        </script>
       </div>
       <button type="button" class="right-button">See More</button>
 
