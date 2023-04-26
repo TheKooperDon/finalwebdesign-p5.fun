@@ -3,7 +3,8 @@
 
 var offset = 0
 function setup(){
-  createCanvas(600, 600)
+  createCanvas(400, 200);
+  
 
 }
 

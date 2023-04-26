@@ -12,9 +12,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
-    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="sketch2.js"></script>
     
 </head>
 
@@ -38,71 +40,82 @@
   </header>
 
   <main>
-    
+
     <div class="wrapper">
       <article>
         <div class="hero-home">
-           <div id="p5-home">
+          <div id="p5-home">
+           
             
-           </div>
+           
+          </div>
 
-      
-  
+
+
 
 
           <h2 class="page-name">Welcome to <span class="site-id">p5.fun</span>. </h2>
           <p>For all your p5.js needs</p>
         </div>
-    
-
-    <section class="card" id="card1">
-      <h2 class="card-header">History</h2>
-      <p>P5.js is a JavaScript library for creative coding that was first released in 2014 by a group of artists and
-        developers led by Lauren McCarthy. The library is based on the popular Processing language and framework,
-        which was originally created in 2001 by Casey Reas and Ben Fry as a tool for teaching programming and
-        computer
-        science to artists and designers.</p>
-        <script src="p5-js/sketch.js"></script>
-      <button type="button" class="right-button">Learn More</button>
-    </section>
 
 
- 
+        <section class="card" id="card1">
+          <h2 class="card-header">History</h2>
+          <p>P5.js is a JavaScript library for creative coding that was first released in 2014 by a group of artists and
+            developers led by Lauren McCarthy. The library is based on the popular Processing language and framework,
+            which was originally created in 2001 by Casey Reas and Ben Fry as a tool for teaching programming and
+            computer
+            science to artists and designers.</p>
+          
+          <button type="button" class="right-button">Learn More</button>
+        </section>
 
 
-    <section class="card" id="card2">
-      <h2 class="card-header">Examples</h2>
-      <p>Here are a couple of examples of p5.js that showcase its ability to create interactive and engaging
-        visuals.
-      </p>
-      <div id="p5-canvas-example">
-        <script>
-          function setup() {
-  var canvas = createCanvas(400, 200);
-  canvas.parent('p5-canvas-example');
-}
-function draw() {
 
-  ellipse(mouseX, mouseY, 50, 50);
-  fill(random(255), random(255), random(255))
-}
-        </script>
-      </div>
-      <button type="button" class="right-button">See More</button>
 
-    </section>
 
-    <section class="card" id="card3">
-      <h2 class="card-header">Get Inspired</h2>
-      <p>P5.js is an awesome tool for artists who want to explore the creative potential of coding. Its simple and
-        user-friendly syntax allows artists to create stunning visuals and animations with ease, without requiring
-        any
-        prior coding experience. P5.js also enables artists to create interactive and dynamic experiences that
-        engage
-        with audiences on a deeper level. </p>
-      <button type="button" class="right-button">Learn More</button>
-    </section>
-    </article>
+        <section class="card" id="card2">
+          <h2 class="card-header">Examples</h2>
+          <p>Here are a couple of examples of p5.js that showcase its ability to create interactive and engaging
+            visuals.
+          </p>
+         
+
+
+
+
+          <!--
+          <div id="p5-canvas-example">
+            <script>
+              function setup() {
+                var canvas = createCanvas(400, 200);
+                canvas.parent('p5-canvas-example');
+              }
+              function draw() {
+
+                ellipse(mouseX, mouseY, 50, 50);
+                fill(random(255), random(255), random(255))
+              }
+            </script>
+          </div>
+
+
+          -->
+          <button type="button" class="right-button">See More</button>
+
+        </section>
+
+        <section class="card" id="card3">
+          <h2 class="card-header">Get Inspired</h2>
+          <p>P5.js is an awesome tool for artists who want to explore the creative potential of coding. Its simple and
+            user-friendly syntax allows artists to create stunning visuals and animations with ease, without requiring
+            any
+            prior coding experience. P5.js also enables artists to create interactive and dynamic experiences that
+            engage
+            with audiences on a deeper level. </p>
+          <button type="button" class="right-button">Learn More</button>
+        </section>
+      </article>
 
     </div>
   </main>
