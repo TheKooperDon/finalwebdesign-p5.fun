@@ -7,8 +7,10 @@ let bugs = []; // array of Jitter objects
 
 function setup() {
 
-  var canvas2 = createCanvas(710, 400);
-  canvas2.parent('java-2');
+  var canvas = createCanvas(710, 400);
+  canvas.parent('card-3');
+
+
   // Create objects
   for (let i = 0; i < 50; i++) {
     bugs.push(new Jitter());
@@ -112,3 +114,4 @@ var x = 0;
   //ellipse(300, 200, 25, 25);
 
 */
+console.log("sketch1.js loaded");
