@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-  background(50, 89, 100);
+  background(0);
   for (let i = 0; i < bugs.length; i++) {
     bugs[i].move();
     bugs[i].display();
