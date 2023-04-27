@@ -215,11 +215,32 @@ canvas {
 
 /*FOOTER*/
 
+#colophon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+.col-3{
+	color:white;
+	background-color: black;
+	border-radius: 40px 40px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
 #colophon ul {
+	
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -229,6 +250,9 @@ canvas {
 	display: inline-block;
 
 }
+.social p {
+	bottom:20px;
+}
 
 .social {
 	margin-bottom: 30px;
@@ -237,6 +261,8 @@ canvas {
 .social li {
 	margin: 0 10px;
 }
+
+
 
 /*END OF FOOTER*/
 
