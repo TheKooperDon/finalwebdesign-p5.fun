@@ -1,11 +1,14 @@
-
+/*
+var canvas = createCanvas(710, 400);
+canvas.parent('p5-home');
+   */
 
 let bugs = []; // array of Jitter objects
 
 function setup() {
 
   var canvas = createCanvas(710, 400);
-  canvas.parent('p5-home');
+  canvas.parent('hero-js');
   // Create objects
   for (let i = 0; i < 50; i++) {
     bugs.push(new Jitter());
@@ -76,9 +79,9 @@ function draw() {
     
     }
   }
-*/
-}
 
+}
+*/
 
   /*
 var x = 0;
