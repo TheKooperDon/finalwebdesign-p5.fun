@@ -7,8 +7,8 @@ let bugs = []; // array of Jitter objects
 
 function setup() {
 
-  var canvas = createCanvas(710, 400);
-  canvas.parent('hero-js');
+  var canvas2 = createCanvas(710, 400);
+  canvas2.parent('java-2');
   // Create objects
   for (let i = 0; i < 50; i++) {
     bugs.push(new Jitter());
