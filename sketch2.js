@@ -2,10 +2,10 @@
 
 
 
-/*
+
 function setup() {
   var canvas = createCanvas(400, 200);
-  canvas.parent('p5-canvas-example');
+  canvas.parent('javascript-example');
 }
 function draw() {
 
@@ -13,8 +13,7 @@ function draw() {
   fill(random(255), random(255), random(255))
 }
 
-
-*/
+/*
 function setup() {
  createCanvas(400, 200);
 
@@ -25,3 +24,4 @@ function draw() {
   fill(random(255), random(255), random(255))
 }
 
+*/
