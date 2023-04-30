@@ -111,28 +111,23 @@ button {
 
 
 /*p5.js*/
-#p5-canvas-example{
+
+
+.home-example{
+	border: 2px solid white;
+	height: 200px;
+	width: 400px;
 	margin: 0 0 0 175px;
 	padding: 0;
 	display: inline-block;
-	border: 2px solid white;
+	
+	
 }
 
-#javascript-example{
-	margin: 0 0 0 175px;
-	padding: 0;
-	display: inline-block;
-	border: 2px solid white;
-}
 
-#java-2{
-	margin: 0 0 0 175px;
-	padding: 0;
-	display: inline-block;
-	border: 2px solid white;
-}
 
 canvas {
+	border-style: none;
 	display: block;
   }
 
