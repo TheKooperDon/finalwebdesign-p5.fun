@@ -87,7 +87,7 @@ button {
 .example-2,
 .example-3,
 .example-4,
-.examples-5{
+.example-5{
 	margin: 0;
 	padding: 0;
 	display: grid;
@@ -366,6 +366,7 @@ h3{
 
 .hero-frame{
 	border-style: none;
+	border-radius: 20px;
 	height: 400px;
 	width: 100%;
 	display: inline;
