@@ -1,41 +1,95 @@
-let sunX, sunY, sunSize; // Variables for the sun
-let mountainHeight = 400; // Height of the mountains
-let speed = 1; // Speed of the movement
-let mountainColor = "#008000"; // Color of the mountains
+const objects = [];
+let eyeZ;
 
 function setup() {
-  createCanvas(windowWidth, 800);
-  sunX = width / 2;
-  sunY = height / 4;
-  sunSize = 80;
+  createCanvas(windowWidth, 400, WEBGL);
+
+  eyeZ = height / 2 / tan((30 * PI) / 180); // The default distance the camera is away from the origin.
+
+  objects.push(new IntersectPlane(1, 0, 0, -100, 0, 0)); // Left wall
+  objects.push(new IntersectPlane(1, 0, 0, 100, 0, 0)); // Right wall
+  objects.push(new IntersectPlane(0, 1, 0, 0, -100, 0)); // Bottom wall
+  objects.push(new IntersectPlane(0, 1, 0, 0, 100, 0)); // Top wall
+  objects.push(new IntersectPlane(0, 0, 1, 0, 0, 0)); // Back wall
+
+  noStroke();
+  ambientMaterial(250);
 }
 
 function draw() {
-  // Draw the sky
-  background("#87CEEB");
+  background(0);
 
-  // Draw the sun
-  fill("#FFD700");
-  circle(sunX, sunY, sunSize);
+  // Lights
+  pointLight(255, 255, 255, 0, 0, 400);
+  ambientLight(244, 122, 158);
 
-  // Move the sun
-  sunX += speed;
+  // Left wall
+  push();
+  translate(-100, 0, 200);
+  rotateY((90 * PI) / 180);
+  plane(400, 200);
+  pop();
 
-  // If the sun goes off the screen, reset its position
-  if (sunX > width + sunSize) {
-    sunX = -sunSize;
+  // Right wall
+  push();
+  translate(100, 0, 200);
+  rotateY((90 * PI) / 180);
+  plane(400, 200);
+  pop();
+
+  // Bottom wall
+  push();
+  translate(0, 100, 200);
+  rotateX((90 * PI) / 180);
+  plane(200, 400);
+  pop();
+
+  // Top wall
+  push();
+  translate(0, -100, 200);
+  rotateX((90 * PI) / 180);
+  plane(200, 400);
+  pop();
+
+  plane(200, 200); // Back wall
+
+  const x = mouseX - width / 2;
+  const y = mouseY - height / 2;
+
+  const Q = createVector(0, 0, eyeZ); // A point on the ray and the default position of the camera.
+  const v = createVector(x, y, -eyeZ); // The direction vector of the ray.
+
+  let intersect; // The point of intersection between the ray and a plane.
+  let closestLambda = eyeZ * 10; // The draw distance.
+
+  for (let x = 0; x < objects.length; x += 1) {
+    let object = objects[x];
+    let lambda = object.getLambda(Q, v); // The value of lambda where the ray intersects the object
+
+    if (lambda < closestLambda && lambda > 0) {
+      // Find the position of the intersection of the ray and the object.
+      intersect = p5.Vector.add(Q, p5.Vector.mult(v, lambda));
+      closestLambda = lambda;
+    }
   }
 
-  // Draw the mountains
-  noStroke();
-  fill(mountainColor);
-  triangle(0, height, 0, height - mountainHeight, width / 2, height - mountainHeight / 2);
-  triangle(width, height, width, height - mountainHeight, width / 2, height - mountainHeight / 2);
+  // Cursor
+  push();
+  translate(intersect);
+  fill(237, 34, 93);
+  sphere(10);
+  pop();
+}
 
-  // Move the mountains
-  mountainHeight += speed;
-  if (mountainHeight > 500) {
-    mountainHeight = 400;
-    mountainColor = "#" + Math.floor(Math.random() * 16777215).toString(16); // Random color
+// Class for a plane that extends to infinity.
+class IntersectPlane {
+  constructor(n1, n2, n3, p1, p2, p3) {
+    this.normal = createVector(n1, n2, n3); // The normal vector of the plane
+    this.point = createVector(p1, p2, p3); // A point on the plane
+    this.d = this.point.dot(this.normal);
+  }
+
+  getLambda(Q, v) {
+    return (-this.d - this.normal.dot(Q)) / this.normal.dot(v);
   }
 }

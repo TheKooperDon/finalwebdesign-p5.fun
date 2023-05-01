@@ -421,7 +421,29 @@ h3{
 
 
 
+/*ALL CSS FOR HISTORY HERO NEEDED*/
+.history-hero-p5{
+	position: relative;
+}
 
+
+
+.history-hero{
+
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.history-text-hero{
+	position:absolute; 
+	top:80px;
+	left:325px; 
+	z-index:2;
+	font-size: 3rem;
+}
 
 
 
