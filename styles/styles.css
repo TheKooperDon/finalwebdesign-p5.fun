@@ -239,7 +239,9 @@ iframe {
 	color:white;
 	background-color: black;
 	border-radius: 40px 40px 0 0;
-	display: flex;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	column-gap: 5%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -248,14 +250,16 @@ iframe {
 	
 }
 
+
+
 #colophon ul {
 	
 	list-style-type: none;
 	
 	padding: 0;
-	display: flex;
+	
 	margin-bottom: 20px;
-
+	
 }
 
 #colophon li {
@@ -267,12 +271,14 @@ iframe {
 
 
 
-/*
-.social {
-	margin-bottom: 20px;
+.social li {
+	margin: 0 10px;
+  padding: 0;
+	display: inline;
+
 	
 }
-
+/*
 .social li {
 	margin: 0 20px;
 	
