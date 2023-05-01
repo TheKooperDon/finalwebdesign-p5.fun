@@ -56,6 +56,8 @@ button {
 	padding-bottom: 75px;
 	width: 100%;
 }
+
+
 .hero-home{
 
 	font-family: futura-pt;
@@ -64,6 +66,32 @@ button {
 	left: 300px;
 	z-index:2;
 }
+
+
+.example-card{
+	float:left;
+	background-color: black;
+	border-radius: 20px;
+	color: white;
+	width: 25%;
+	padding: 0 20px;
+	margin:  10px 0;
+}
+
+
+
+
+
+/*
+.example-1, 
+.example-2,
+.example-3,
+.example-4,
+.examples-5{
+	
+}
+
+*/
 
 
 /*SPECIAL LAYOUTS*/
