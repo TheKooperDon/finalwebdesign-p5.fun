@@ -5,7 +5,7 @@ let bugs = []; // array of Jitter objects
 
 function setup() {
 
-  createCanvas(799, 396);
+  createCanvas(799, 400);
   
 
 
