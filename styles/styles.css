@@ -6,18 +6,23 @@ html {
 	
 }
 
+body{
+	margin:0;
+
+	font-family: Chivo, sans-serif;
+}
+
 .site-id {
 
 	font-family: futura-pt, sans-serif;
 	font-weight: 200;
 	font-style: normal;
+	color: yellow;
+	top:20px;
+	left: 20px;
 
 }
 
-p {
-	font-family: Chivo, sans-serif;
-
-}
 
 
 
@@ -58,14 +63,11 @@ button {
 }
 
 
-.hero-home{
 
-	font-family: futura-pt;
-	position:absolute;
-	top: 70px;
-	left: 300px;
-	z-index:2;
-}
+
+
+
+
 
 
 .example-card-p5{
@@ -169,22 +171,7 @@ iframe {
 
   }
 
-.hero-frame{
-	border-style: none;
-	height: 400px;
-	width: 100%;
-	display: inline;
-	padding: 0;
-	margin:0;
-}
-.example-hero{
 
-	border-radius: 20px;
-	padding: 0;
-	margin: 0;
-	width: 800px;
-	height: 400px;
-}
 
 .example-p5{
 	padding: 20px 0;
@@ -209,7 +196,7 @@ iframe {
 
 
 #menu {
-
+	margin-top: 20px;
 	padding: 20px 0;
 	background-color: black;
 	border-radius: 25px;
@@ -361,19 +348,67 @@ h2{
 	font-style: normal;
 
 }
+
+/*ALL CSS FOR EXAMPLES HERO NEEDED*/
+.examples-hero-p5{
+	position: relative;
+}
+
+
+
+.example-hero{
+
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
 .examples-text-hero{
 	position:absolute; 
 	top:150px;
 	left:300px; 
 	z-index:2;
 	font-size: 3rem;
-	
-	
+}
+/*P5 HERO CSS*/
+
+
+/*This is the text for the home page hero*/
+.hero-home-p5{
+	position: relative;
+} 
+
+.hero-frame{
+	border-style: none;
+	height: 400px;
+	width: 100%;
+	display: inline;
+	padding: 0;
+	margin:0;
 }
 
-.div-test{
-	position: relative;
+
+
+.home-text-hero{
+	position: absolute;
+	top:100px;
+	left:20px;
+	color: white;
+	font-size: 3em;
+  }
+  .home-text-hero2{
+	position: absolute;
+	color: white;
+	font-size: 1.2em;
+	top:180px;
+	left: 20px;
+	
 }
+  
+
+
 
 h3{
 	font-family: futura-pt, sans-serif;
