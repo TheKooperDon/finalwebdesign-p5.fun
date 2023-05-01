@@ -68,12 +68,10 @@ button {
 }
 
 
-.example-card{
-	float:left;
+.example-card-p5{
 	background-color: black;
 	border-radius: 20px;
 	color: white;
-	width: 25%;
 	padding: 0 20px;
 	margin:  10px 0;
 }
@@ -82,16 +80,23 @@ button {
 
 
 
-/*
+
 .example-1, 
 .example-2,
 .example-3,
 .example-4,
 .examples-5{
-	
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 45% 45%;
+	column-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	place-items: center;
 }
 
-*/
+
 
 
 /*SPECIAL LAYOUTS*/
@@ -179,6 +184,13 @@ iframe {
 	margin: 0;
 	width: 800px;
 	height: 400px;
+}
+
+.example-p5{
+	padding: 20px 0;
+	margin: 0;
+	width:300px;
+	height:200px
 }
 
 

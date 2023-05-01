@@ -2,7 +2,7 @@
 let r1, r2, r3, r4;
 
 function setup() {
-createCanvas(710, 400);
+createCanvas(300, 400);
 fill(255, 204);
 noStroke();
 r1 = new MRect(1, 134.0, 0.532, 0.1 * height, 10.0, 60.0);
