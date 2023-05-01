@@ -222,13 +222,18 @@ iframe {
 
 
 /*FOOTER*/
-
+/*
 #colophon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
   }
+*/
 
+#colophon {
+	padding-top: 40px;
+	
+  }
 
 .col-3{
 	color:white;
@@ -237,39 +242,48 @@ iframe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	
+
 	
 }
-
 
 #colophon ul {
 	
 	list-style-type: none;
-	margin: 0;
+	
 	padding: 0;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-bottom: 20px;
 
 }
 
 #colophon li {
 	margin: 0 10px;
 	padding: 0;
-	display: inline-block;
+	
 
 }
-.social p {
-	bottom:20px;
-}
 
+
+
+/*
 .social {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	
 }
 
 .social li {
-	margin: 0 10px;
-}
+	margin: 0 20px;
+	
+}	
 
+
+.social ul {
+	margin-top: 20px;
+	align-items: center;
+  }
+*/
 
 
 /*END OF FOOTER*/
