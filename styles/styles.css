@@ -129,9 +129,7 @@ button {
 	
 	
 	
-	
-	
-	
+
 	
   }
 
@@ -152,6 +150,14 @@ iframe {
 	padding: 0;
 	margin:0;
 }
+.example-hero{
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
 
 /*LINKS AND NAV*/
 
