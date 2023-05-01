@@ -1,17 +1,41 @@
-let angle = 0;
+let colors = [];
+let numCircles = 20;
+let circleSize = 100;
+let circleSpacing = 50;
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(800, 600);
+  noStroke();
+  
+  // create an array of random colors for the circles
+  for (let i = 0; i < numCircles; i++) {
+    colors[i] = color(random(200, 255), random(200, 255), random(200, 255));
+  }
 }
 
 function draw() {
-  background(0);
-  angle += 0.05;
-  for (let y = 0; y < height; y++) {
-    let wave = sin(angle + y * 0.02);
-    let xoffset = map(wave, -1, 1, -50, 50);
-    let bright = map(wave, -1, 1, 0, 255);
-    stroke(bright, bright, bright);
-    line(0 + xoffset, y, width + xoffset, y);
+  // draw background gradient
+  background(200, 100, 100);
+  for (let i = 0; i < height; i++) {
+    let from = color(255, 200, 0);
+    let to = color(0, 200, 255);
+    let inter = lerpColor(from, to, i / height);
+    stroke(inter);
+    line(0, i, width, i);
+  }
+  
+  // update circle colors
+  for (let i = 0; i < numCircles; i++) {
+    colors[i] = lerpColor(colors[i], color(random(200, 255), random(200, 255), random(200, 255)), 0.01);
+  }
+  
+  // draw circles
+  let xOffset = (width - (numCircles * (circleSize + circleSpacing))) / 2;
+  let yOffset = height / 2;
+  for (let i = 0; i < numCircles; i++) {
+    let x = xOffset + (i * (circleSize + circleSpacing));
+    let y = yOffset + sin(frameCount / 50 + i) * 50;
+    fill(colors[i]);
+    ellipse(x, y, circleSize, circleSize);
   }
 }

@@ -123,13 +123,7 @@ button {
 	display: block;
 	margin: 0 0 0 175px;
 	padding: 0;
-	
-	
 	border: 5px solid white;
-	
-	
-	
-
 	
   }
 
@@ -151,6 +145,7 @@ iframe {
 	margin:0;
 }
 .example-hero{
+
 	border-radius: 20px;
 	padding: 0;
 	margin: 0;
@@ -320,6 +315,31 @@ li {
 }
 
 
+h2{
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+}
+.examples-text-hero{
+	position:absolute; 
+	top:150px;
+	left:300px; 
+	z-index:2;
+	font-size: 3rem;
+	
+	
+}
+
+.div-test{
+	position: relative;
+}
+
+h3{
+	font-family: futura-pt, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
 
 
 
