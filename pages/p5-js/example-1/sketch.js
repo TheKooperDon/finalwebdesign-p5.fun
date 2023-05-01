@@ -1,13 +1,32 @@
+let x, y, r, g, b, size;
+
 function setup() {
-    createCanvas(300, 400);
-  }
+  createCanvas(300, 400);
+  background(255);
+  noStroke();
+}
+
+function draw() {
+  // generate a random color
+  r = random(255);
+  g = random(255);
+  b = random(255);
   
-  // draw lines and make it colorful
-  function draw() {
-    // pick a random color for the stroke
-    stroke(random(255), random(255), random(255));
-    // pick a random width for the stroke
-    strokeWeight(random(10));
-    // draw a line from a random point to another random point
-    line(random(width), random(height), random(width), random(height));
-  }
+  // generate a random size
+  size = random(10, 40);
+  
+  // draw a circle at the mouse position
+  fill(r, g, b);
+  ellipse(mouseX, mouseY, size, size);
+  
+  // draw a circle at a random position
+  x = random(width);
+  y = random(height);
+  fill(b, r, g);
+  ellipse(x, y, size/2, size/2);
+}
+
+function mouseClicked() {
+  // clear the canvas on mouse click
+  background(255);
+}
