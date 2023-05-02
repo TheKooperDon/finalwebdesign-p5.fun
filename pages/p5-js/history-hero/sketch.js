@@ -17,11 +17,13 @@ function setup() {
 }
 
 function draw() {
+
+  
   background(0);
 
   // Lights
-  pointLight(255, 255, 255, 0, 0, 400);
-  ambientLight(244, 122, 158);
+  pointLight(255, 255, 255, 10, 0, 400);
+  ambientLight(50, 50, 12);
 
   // Left wall
   push();
