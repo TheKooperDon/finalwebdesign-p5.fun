@@ -62,7 +62,7 @@ button {
 	width: 100%;
 }
 
-.history-card{
+.default-card{
 	background-color: black;
 	color: white;
 	border-radius: 20px;
@@ -70,7 +70,7 @@ button {
 	margin: 20px 0;
 
 }
-.history-card li{
+.default-card li{
 	background-color: black;
 	color: white;
 	border-radius: 20px;
