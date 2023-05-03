@@ -384,6 +384,13 @@ h3{
 	font-style: normal;
 }
 
+.history-bullets li{
+	font-family: Chivo, sans-serif;
+	color: black;
+	font-weight: 300;
+	font-size: 1em;
+}
+
 /*P5 HERO CSS*/
 /*This is the text for the home page hero*/
 .hero-home-p5{
