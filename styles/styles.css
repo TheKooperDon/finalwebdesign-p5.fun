@@ -482,7 +482,31 @@ h3{
 	font-size: 3rem;
 }
 
+/*ALL CSS FOR BENEFITS HERO NEEDED*/
+.benefits-hero-p5{
+	position: relative;
+}
 
+
+
+.benefits-hero{
+
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.benefits-text-hero{
+	position:absolute; 
+	top:175px;
+	left:210px; 
+	color: white;
+	font-size: 2.2em;
+	
+
+}
 
 /*IMAGES*/
 
