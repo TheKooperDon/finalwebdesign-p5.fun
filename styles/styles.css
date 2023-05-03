@@ -62,6 +62,23 @@ button {
 	width: 100%;
 }
 
+.history-card{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 20px;
+	margin: 20px;
+
+}
+.history-card li{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	
+
+
+}
+
 hr.rounded {
 	border-top: 5px solid black;
 	border-radius: 5px;
@@ -391,12 +408,7 @@ h3{
 	font-style: normal;
 }
 
-.history-bullets li{
-	font-family: Chivo, sans-serif;
-	color: black;
-	font-weight: 300;
-	font-size: 1em;
-}
+
 
 /*P5 HERO CSS*/
 /*This is the text for the home page hero*/
