@@ -62,7 +62,10 @@ button {
 	width: 100%;
 }
 
-
+hr.rounded {
+	border-top: 5px solid black;
+	border-radius: 5px;
+  }
 
 
 
