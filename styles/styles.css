@@ -83,7 +83,7 @@ hr.rounded {
 
 
 .step-1 img{
-	width:600px;
+	width:100%;
 	
 }
 
@@ -91,16 +91,23 @@ hr.rounded {
 .step-3 img,
 .step-4 img,
 .step-5 img{
-	width:400px;
+	width:375px;
 
 }
 .two-col{
+
 	display: grid;
-	grid-template-columns: 45% 45%;
-	column-gap: 10%;
+	grid-template-columns: 50% 50%;
+	
 	justify-content: center;
 	align-items: center;
+	column-gap: 10px;
+	
 }
+.two-col img{
+	border: 2px solid black
+}
+
 
 
 
