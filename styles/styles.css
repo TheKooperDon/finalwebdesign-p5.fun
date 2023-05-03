@@ -508,6 +508,32 @@ h3{
 
 }
 
+/*ALL CSS FOR LEARN HOW HERO NEEDED*/
+.learn-how-hero-p5{
+	position: relative;
+}
+
+
+
+.learn-how-hero{
+
+	border-radius: 20px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.learn-how-text-hero{
+	position:absolute; 
+	top:170px;
+	left:310px; 
+	color: white;
+	font-size: 2.8em;
+	
+
+}
+
 /*IMAGES*/
 
 /*UTILITES*/

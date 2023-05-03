@@ -1,18 +1,18 @@
 // Define the variables for the ball and the paddles
 let ballX = 400;
-let ballY = 300;
+let ballY = 200;
 let ballSpeedX = 5;
 let ballSpeedY = 5;
 let ballSize = 20;
 let paddleWidth = 20;
 let paddleHeight = 100;
-let leftPaddleY = 250;
-let rightPaddleY = 250;
+let leftPaddleY = 150;
+let rightPaddleY = 150;
 let paddleSpeed = 10;
 
 function setup() {
-  // Create a canvas of size 800 by 600
-  createCanvas(800, 600);
+  // Create a canvas of size 800 by 400
+  createCanvas(800, 400);
 }
 
 function draw() {
@@ -36,39 +36,23 @@ function draw() {
   // Check if the ball hits the top or bottom edge and reverse its vertical speed
   if (ballY < ballSize / 2 || ballY > height - ballSize / 2) {
     ballSpeedY = -ballSpeedY;
+    // Make sure the ball stays within the canvas
+    ballY = constrain(ballY, ballSize / 2, height - ballSize / 2);
   }
   
-  // Check if the ball hits the left or right edge and reset its position and speed
-  if (ballX < ballSize / 2 || ballX > width - ballSize / 2) {
-    ballX = width / 2;
-    ballY = height / 2;
-    ballSpeedX = random(-5, 5);
-    ballSpeedY = random(-5, 5);
-  }
-  
-  // Check if the ball hits the left paddle and reverse its horizontal speed
-  if (ballX < paddleWidth + ballSize / 2 && 
-      ballY > leftPaddleY && 
-      ballY < leftPaddleY + paddleHeight) {
-    ballSpeedX = -ballSpeedX;
-    // Add some randomness to the vertical speed
-    ballSpeedY += random(-1, 1);
-  }
-  
-   // Check if the ball hits the right paddle and reverse its horizontal speed
-   if (ballX > width - paddleWidth - ballSize / 2 && 
-      ballY > rightPaddleY && 
-      ballY < rightPaddleY + paddleHeight) {
+   // Check if the ball hits the left or right edge and reverse its horizontal speed
+   if (ballX < paddleWidth + ballSize / 2 || 
+      ballX > width - paddleWidth - ballSize / 2) {
     ballSpeedX = -ballSpeedX;
     // Add some randomness to the vertical speed
     ballSpeedY += random(-1, 1);
    }
    
-   // Move the left paddle up or down based on the key pressed
-   if (keyIsDown(UP_ARROW)) {
+   // Move the left paddle up or down based on the position of the ball
+   if (ballY < leftPaddleY + paddleHeight / 2) {
      leftPaddleY -= paddleSpeed;
    }
-   if (keyIsDown(DOWN_ARROW)) {
+   if (ballY > leftPaddleY + paddleHeight / 2) {
      leftPaddleY += paddleSpeed;
    }
    
