@@ -56,7 +56,7 @@ button {
 .card {
 	position: relative;
 	background-color: black;
-	border-radius: 20px;
+	border-radius: 10px;
 	color: white;
 	padding-bottom: 75px;
 	width: 100%;
@@ -92,7 +92,7 @@ hr.rounded {
 
 .example-card-p5{
 	background-color: black;
-	border-radius: 20px;
+	border-radius: 10px;
 	color: white;
 	padding: 0 20px;
 	margin:  10px 0;
@@ -154,7 +154,7 @@ hr.rounded {
 .card p {
 	background-color: black;
 	margin: 20px;
-	border-radius: 20px;
+	border-radius: 10px;
 	color: white;
 
 }
@@ -227,7 +227,7 @@ iframe {
 	width:300px;
 	height:200px;
 	border: 5px solid black;
-	border-radius: 25px;
+	border-radius: 10px;
 }
 
 
@@ -249,7 +249,7 @@ iframe {
 	margin-top: 20px;
 	padding: 20px 0;
 	background-color: black;
-	border-radius: 25px;
+	border-radius: 10px;
 
 }
 
@@ -320,7 +320,7 @@ iframe {
 .col-3{
 	color:white;
 	background-color: black;
-	border-radius: 40px 40px 0 0;
+	border-radius: 10px 10px 0 0;
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	column-gap: 5%;
@@ -418,7 +418,7 @@ h3{
 
 .hero-frame{
 	border-style: none;
-	border-radius: 20px;
+	border-radius: 10px;
 	height: 400px;
 	width: 100%;
 	display: inline;
@@ -453,7 +453,7 @@ h3{
 
 .example-hero{
 
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 0;
 	margin: 0;
 	width: 800px;
@@ -479,7 +479,7 @@ h3{
 
 .history-hero{
 
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 0;
 	margin: 0;
 	width: 800px;
@@ -503,7 +503,7 @@ h3{
 
 .benefits-hero{
 
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 0;
 	margin: 0;
 	width: 800px;
@@ -529,7 +529,7 @@ h3{
 
 .learn-how-hero{
 
-	border-radius: 20px;
+	border-radius: 10px;
 	padding: 0;
 	margin: 0;
 	width: 800px;
