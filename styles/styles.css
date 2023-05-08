@@ -157,6 +157,26 @@ hr.rounded {
 	
 }
 
+.example-1 .example-card-p5,
+.example-3 .example-card-p5,
+.example-5 .example-card-p5{
+	border-radius:   10px 0 0 10px  ;
+}
+.example-2 .example-card-p5,
+.example-4 .example-card-p5{
+	border-radius: 0  10px 10px 0  ;
+}
+
+.example-1 .example-p5,
+.example-3 .example-p5,
+.example-5 .example-p5{
+	border-radius: 0  10px 10px 0  ;
+}
+
+.example-2 .example-p5,
+.example-4 .example-p5{
+	border-radius:   10px 0 0 10px  ;
+}
 
 
 
