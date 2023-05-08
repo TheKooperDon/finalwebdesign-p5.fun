@@ -100,7 +100,9 @@ hr.rounded {
 	padding: 5px 20px;
 	margin: 0;
 	height: 200px;
-	
+	/*
+	width:300px;
+	*/
 	
 	
 }
@@ -146,14 +148,15 @@ hr.rounded {
 .example-3,
 .example-4,
 .example-5{
-	margin: 0;
-	padding: 20px 0;
+	
 	display: grid;
-	grid-template-columns: 45% 45%;
-	column-gap: 20px;
+	grid-template-columns: 50% 50%;
+	
 	justify-content: center;
 	align-items: center;
 	place-items: center;
+	margin: 0;
+	padding: 20px 0;
 	
 }
 
@@ -254,9 +257,12 @@ iframe {
 
 
 .example-p5{
-	
+
+	padding: 0;
 	margin: 0;
-	width:300px;
+	/*
+	width:330px;
+	*/
 	height:200px;
 	border: 5px solid black;
 	border-radius: 10px;
