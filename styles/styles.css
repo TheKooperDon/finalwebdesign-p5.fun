@@ -60,6 +60,7 @@ button {
 	color: white;
 	padding-bottom: 75px;
 	width: 100%;
+	
 }
 
 .default-card{
@@ -68,6 +69,8 @@ button {
 	border-radius: 20px;
 	padding: 5px 20px;
 	margin: 20px 0;
+	
+
 
 }
 .default-card li{
@@ -94,8 +97,14 @@ hr.rounded {
 	background-color: black;
 	border-radius: 10px;
 	color: white;
-	padding: 0 20px;
-	margin:  10px 0;
+	padding: 5px 20px;
+	margin: 0;
+	
+	
+}
+.example-card-p5  h2{
+	padding: 0;
+	margin: 10px 0;
 }
 
 
@@ -207,6 +216,7 @@ hr.rounded {
 	margin: 0 0 0 175px;
 	padding: 0;
 	border: 5px solid white;
+	border-radius: 10px;
 	
   }
 
