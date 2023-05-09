@@ -1,6 +1,6 @@
 // create a canvas of size 300 by 400
 function setup() {
-  createCanvas(300, 400);
+  createCanvas(400, 400);
 }
 
 // draw lines and make it colorful

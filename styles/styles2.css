@@ -1,0 +1,575 @@
+/*GLOBAL STYLES*/
+
+html {
+	font-size: 1em;
+	background-color: #f5f5f5;
+	
+}
+
+body{
+	margin:0;
+
+	font-family: Chivo, sans-serif;
+}
+
+.site-id {
+
+	font-family: futura-pt, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	color: yellow;
+	top:20px;
+	left: 20px;
+
+}
+
+
+/*LAYOUT*/
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+
+button {
+
+
+	background-color: yellow;
+	border-radius: 25px;
+	color: black;
+	font-family: Chivo, sans-serif;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	position: relative;
+	
+
+}
+
+
+.card {
+	position: relative;
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+	padding-bottom: 75px;
+	width: 100%;
+	
+}
+
+.default-card{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 5px 20px;
+	margin: 20px 0;
+	
+
+
+}
+.default-card li{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	
+
+
+}
+
+hr.rounded {
+	border-top: 5px solid black;
+	border-radius: 5px;
+  }
+
+.example-card-p5{
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+	padding: 5px 20px;
+	margin: 0;
+	height: 200px;
+	/* removed width
+	width:300px;
+	*/
+	
+}
+.example-card-p5  h2{
+	padding: 0;
+	margin: 10px 0;
+}
+
+
+.step-1 img{
+	width:100%;
+	
+}
+
+.step-2 img,
+.step-3 img,
+.step-4 img,
+.step-5 img{
+	width:375px;
+
+}
+.two-col{
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+	
+}
+.two-col img{
+	border: 2px solid black
+}
+
+
+
+
+
+/* applied to section tag */
+.example-1, 
+.example-2,
+.example-3,
+.example-4,
+.example-5{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+	/*
+	these declarations don't appear to do anything
+	justify-content: center;
+	align-items: center;
+	place-items: center;*/
+	margin: 0;
+	padding: 20px 0;
+	
+}
+
+.example-1 .example-card-p5,
+.example-3 .example-card-p5,
+.example-5 .example-card-p5{
+	border-radius:   10px 0 0 10px  ;
+}
+.example-2 .example-card-p5,
+.example-4 .example-card-p5{
+	border-radius: 0  10px 10px 0  ;
+}
+
+.example-1 .example-p5,
+.example-3 .example-p5,
+.example-5 .example-p5{
+	border-radius: 0  10px 10px 0  ;
+}
+
+.example-2 .example-p5,
+.example-4 .example-p5{
+	border-radius:   10px 0 0 10px  ;
+}
+
+
+
+/*SPECIAL LAYOUTS*/
+
+.card p {
+	background-color: black;
+	margin: 20px;
+	border-radius: 10px;
+	color: white;
+
+}
+
+#card1,
+#card2,
+#card3{
+	width: 600px;
+}
+
+#card1,
+#card3{
+	margin-left: 200px;
+}
+
+
+.right-button {
+	background-color: black;
+	color: yellow;
+	font-family: Chivo, sans-serif;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	border-radius: 25px;
+	border: 2px solid yellow;
+	position: absolute;
+	bottom: 10px;
+	/* Adjust this value to position the button */
+	right: 20px;
+	/* Adjust this value to position the button */
+}
+
+.right-button:hover {
+	background-color: yellow;
+	font-family: Chivo, sans-serif;
+	color: black;
+	border: 2px solid yellow;
+}
+
+
+/*p5.js*/
+
+
+.home-example {
+
+
+	border-style: none;
+	height: 200px;
+	width: 400px;
+	display: block;
+	margin: 0 0 0 175px;
+	padding: 0;
+	border: 5px solid white;
+	border-radius: 10px;
+	
+  }
+
+
+
+iframe {
+	padding: 0px;
+	margin:0px;
+
+  }
+
+
+
+.example-p5{
+	padding: 0;
+	margin: 0;
+	width: 390px;
+	/* half of wrapper minus the 10px of border on left/right */
+	height:200px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+
+/*LINKS AND NAV*/
+
+#banner .site-id {
+	margin-top: 10px;
+	margin-left: 50px;
+	padding: 0;
+	float: left;
+	font-family: futura-pt, sans-serif;
+	font-weight: 200;
+	color: yellow;
+
+}
+
+
+#menu {
+	margin-top: 20px;
+	padding: 20px 0;
+	background-color: black;
+	border-radius: 10px;
+
+}
+
+#menu ul {
+
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+
+
+
+}
+
+#menu li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0;
+	text-decoration: none;
+
+
+
+}
+
+#menu a {
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 0;
+
+
+}
+
+#menu a:hover,
+#menu .current a {
+	color: yellow;
+
+}
+
+#menu a:active {
+	color: blue;
+}
+
+
+
+
+
+/*FOOTER*/
+/*
+#colophon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+*/
+
+#colophon {
+	padding-top: 40px;
+	
+  }
+
+#colophon .site-id{
+	font-size: 2em;
+} 
+
+.col-3{
+	color:white;
+	background-color: black;
+	border-radius: 10px 10px 0 0;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	column-gap: 5%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+
+	
+}
+
+
+
+#colophon ul {
+	
+	list-style-type: none;
+	
+	padding: 0;
+	
+	margin-bottom: 20px;
+	
+}
+
+#colophon li {
+	margin: 0 10px;
+	padding: 0;
+	
+
+}
+
+
+
+.social li {
+	margin: 0 10px;
+  padding: 0;
+	display: inline;
+
+	
+}
+/*
+.social li {
+	margin: 0 20px;
+	
+}	
+
+
+.social ul {
+	margin-top: 20px;
+	align-items: center;
+  }
+*/
+
+
+/*END OF FOOTER*/
+
+
+
+/*FONTS AND TYPEOGRAPHY*/
+
+.card-header {
+	padding-top: 20px;
+	margin-left: 20px;
+	
+	font-family: futura-pt, sans-serif;
+	font-weight: 300px;
+	font-size: 2.5em;
+}
+
+li {
+	font-family: Chivo, sans-serif;
+	font-weight: 200;
+	color: black;
+}
+
+
+h2{
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+}
+h3{
+	font-family: futura-pt, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+
+
+/*P5 HERO CSS*/
+/*This is the text for the home page hero*/
+.hero-home-p5{
+	position: relative;
+} 
+
+.hero-frame{
+	border-style: none;
+	border-radius: 10px;
+	height: 400px;
+	width: 100%;
+	display: inline;
+	padding: 0;
+	margin:0;
+}
+
+
+
+.home-text-hero{
+	position: absolute;
+	top:100px;
+	left:20px;
+	color: white;
+	font-size: 3em;
+  }
+  .home-text-hero2{
+	position: absolute;
+	color: white;
+	font-size: 1.2em;
+	top:180px;
+	left: 20px;
+	
+}
+
+/*ALL CSS FOR EXAMPLES HERO NEEDED*/
+.examples-hero-p5{
+	position: relative;
+}
+
+
+
+.example-hero{
+
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.examples-text-hero{
+	position:absolute; 
+	top:150px;
+	left:300px; 
+	z-index:2;
+	font-size: 3rem;
+}
+
+
+
+/*ALL CSS FOR HISTORY HERO NEEDED*/
+.history-hero-p5{
+	position: relative;
+}
+
+
+
+.history-hero{
+
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.history-text-hero{
+	position:absolute; 
+	top:80px;
+	left:325px; 
+	z-index:2;
+	font-size: 3rem;
+}
+
+/*ALL CSS FOR BENEFITS HERO NEEDED*/
+.benefits-hero-p5{
+	position: relative;
+}
+
+
+
+.benefits-hero{
+
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.benefits-text-hero{
+	position:absolute; 
+	top:175px;
+	left:210px; 
+	color: white;
+	font-size: 2.2em;
+	
+
+}
+
+/*ALL CSS FOR LEARN HOW HERO NEEDED*/
+.learn-how-hero-p5{
+	position: relative;
+}
+
+
+
+.learn-how-hero{
+
+	border-radius: 10px;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	height: 400px;
+}
+
+.learn-how-text-hero{
+	position:absolute; 
+	top:160px;
+	left:300px; 
+	color: white;
+	font-size: 2.8em;
+	
+
+}
+
+/*IMAGES*/
+
+/*UTILITES*/

@@ -24,11 +24,6 @@ body{
 }
 
 
-
-
-
-
-
 /*LAYOUT*/
 
 .wrapper {
@@ -87,12 +82,6 @@ hr.rounded {
 	border-radius: 5px;
   }
 
-
-
-
-
-
-
 .example-card-p5{
 	background-color: black;
 	border-radius: 10px;
@@ -100,8 +89,9 @@ hr.rounded {
 	padding: 5px 20px;
 	margin: 0;
 	height: 200px;
-	
-	
+	/* removed width
+	width:300px;
+	*/
 	
 }
 .example-card-p5  h2{
@@ -140,20 +130,22 @@ hr.rounded {
 
 
 
-
+/* applied to section tag */
 .example-1, 
 .example-2,
 .example-3,
 .example-4,
 .example-5{
-	margin: 0;
-	padding: 20px 0;
 	display: grid;
-	grid-template-columns: 45% 45%;
-	column-gap: 20px;
+	grid-template-columns: 50% 50%;
+	
+	/*
+	these declarations don't appear to do anything
 	justify-content: center;
 	align-items: center;
-	place-items: center;
+	place-items: center;*/
+	margin: 0;
+	padding: 20px 0;
 	
 }
 
@@ -245,7 +237,6 @@ hr.rounded {
 
 
 iframe {
-	
 	padding: 0px;
 	margin:0px;
 
@@ -254,9 +245,10 @@ iframe {
 
 
 .example-p5{
-	
+	padding: 0;
 	margin: 0;
-	width:300px;
+	width: 390px;
+	/* half of wrapper minus the 10px of border on left/right */
 	height:200px;
 	border: 5px solid black;
 	border-radius: 10px;

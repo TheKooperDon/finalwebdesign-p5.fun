@@ -3,7 +3,7 @@ let attractor;
 let time = 0;
 
 function setup() {
-  createCanvas(300, 400);
+  createCanvas(400, 400);
   colorMode(HSB);
   noStroke();
   attractor = new Attractor(width/2, height/2);
