@@ -1,7 +1,7 @@
 let points = [];
 
 function setup() {
-  createCanvas(300, 400);
+  createCanvas(400, 400);
   strokeWeight(2);
   frameRate(10);
 }
