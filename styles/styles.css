@@ -384,6 +384,14 @@ iframe {
 
 	
 }
+.p5-js-link {
+	color: #0000EE;
+	text-decoration: underline;
+  }
+  
+  .p5-js-link:focus, .p5-js-link:active {
+	outline: none;
+  }
 /*
 .social li {
 	margin: 0 20px;
