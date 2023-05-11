@@ -392,6 +392,15 @@ iframe {
   .p5-js-link:focus, .p5-js-link:active {
 	outline: none;
   }
+
+  .p5-js-link-history{
+	color: yellow;
+	text-decoration: underline;
+  }
+  
+  .p5-js-link-history:focus, .p5-js-link-history:active {
+	outline: none;
+  }
 /*
 .social li {
 	margin: 0 20px;
